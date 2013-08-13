@@ -22,4 +22,4 @@ def upgrade_1000_to_1001(context):
 
 
 def upgrade_1000_to_1002(context):
-    context.runImportStepFromProfile("profile-Products.Faq:default", 'rolemap')
+    context.runImportStepFromProfile("profile-Products.Faq.at:default", 'rolemap')

@@ -7,7 +7,7 @@
       name="default"
       title="Faq"
       directory="profiles/default"
-      description="Extension profile for Faq module."
+      description="Installs the Archetype based Faq content type."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

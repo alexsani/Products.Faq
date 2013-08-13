@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="portal_skins" meta_type="Plone Skins Tool">
   <object name="faq" meta_type="Filesystem Directory View"
-    directory="Products.Faq:skins/faq"/>
+    directory="Products.Faq.at:skins/faq"/>
   <skin-path name="*">
     <layer name="faq"/>
   </skin-path>

@@ -8,7 +8,7 @@
  <property name="description" i18n:translate="">Frequently asked question</property>
  <property name="content_icon">faq_icon.gif</property>
  <property name="content_meta_type">FaqEntry</property>
- <property name="product">Products.Faq</property>
+ <property name="product">Products.Faq.at</property>
  <property name="factory">addFaqEntry</property>
  <property name="immediate_view">base_edit</property>
  <property name="global_allow">False</property>
