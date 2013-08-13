@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.4.dev0'
+version = '2.0.0'
 
 setup(name='Products.Faq',
       version=version,
-      description="FAQ - An AT contenttype for Plone",
+      description="FAQ - A contenttype for Plone",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
@@ -16,7 +16,7 @@ setup(name='Products.Faq',
         "Framework :: Plone :: 4.2",
         "Framework :: Plone :: 4.3",
         ],
-      keywords='FAQ Archetypes Plone Contenttype',
+      keywords='FAQ Plone Contenttype',
       author='Four Digits',
       author_email='info@fourdigits.nl',
       url='https://github.com/tomgross/Products.Faq',
@@ -30,7 +30,13 @@ setup(name='Products.Faq',
           # -*- Extra requirements: -*-
       ],
       extras_require = {
-          'test': ['plone.app.testing']
+          'test': ['plone.app.testing'],
+          'dexterity': [
+              'five.grok',
+              'plone.app.dexterity [grok]',
+              'plone.dexterity',
+              'collective.autopermission',
+          ],
       },
       entry_points="""
       # -*- Entry points: -*-
