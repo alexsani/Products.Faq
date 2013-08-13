@@ -1,5 +1,5 @@
-from Products.Faq.content import FaqFolder
-from Products.Faq.content import FaqEntry
+from Products.Faq.at.content import FaqFolder
+from Products.Faq.at.content import FaqEntry
 
 import sys
 sys.modules['Products.Faq.FaqFolder'] = FaqFolder
