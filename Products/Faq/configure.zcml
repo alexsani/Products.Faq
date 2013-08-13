@@ -1,13 +1,13 @@
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:five="http://namespaces.zope.org/five"
            xmlns:i18n="http://namespaces.zope.org/i18n"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
            i18n_domain="faq">
 
-  <five:registerPackage package="." initialize=".initialize" />
   <i18n:registerTranslations directory="locales" />
-
-  <include package=".content" />
-  <include file="skins.zcml" />
-  <include file="profiles.zcml" />
+  
+  <!-- Use ArcheTypes or Dexterity -->
+  <include zcml:condition="installed Products.ATContentTypes" package=".at" />
+  <include zcml:condition="installed plone.dexterity" package=".dx" />
 
 </configure>
