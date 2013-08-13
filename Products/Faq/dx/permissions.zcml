@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="Faq">
+
+    <!-- Define new permissions -->
+    
+    <permission
+        id="Products.Faq.AddFaqFolderDx"
+        title="Products.Faq: Add Dexterity Faq Folder"
+        />
+
+    <permission
+        id="Products.Faq.AddFaqEntryDx"
+        title="Products.Faq: Add Dexterity Faq Entry"
+        />
+
+</configure>
