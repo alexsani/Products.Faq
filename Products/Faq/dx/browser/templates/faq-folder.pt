@@ -21,10 +21,10 @@
     if (el) {
        if (el.style.display == "block"){
         el.style.display = "none";
-        icon.src = "treeCollapsed.gif";
+        icon.src = "/++resource++Products.Faq/images/treeCollapsed.gif";
        } else {
         el.style.display = "block";
-        icon.src = "treeExpanded.gif";
+        icon.src = "/++resource++Products.Faq/images/treeExpanded.gif";
        }
     }
   }
@@ -36,10 +36,10 @@
       if (el) {
          if (faq_displayAll) {
             el.style.display = "none";
-            icon.src = "treeCollapsed.gif";
+            icon.src = "/++resource++Products.Faq/images/treeCollapsed.gif";
          } else {
             el.style.display = "block";
-            icon.src = "treeExpanded.gif";
+            icon.src = "/++resource++Products.Faq/images/treeExpanded.gif";
          }
       }
     }
